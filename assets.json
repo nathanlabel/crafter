@@ -1,0 +1,45 @@
+{
+    "tilesets": [
+        {
+            "name": "Basic Character",
+            "asset": "assets/characters/BasicCharacter.png",
+            "tile_width": 48,
+            "tile_height": 48,
+            "frame_time": 0.2,
+            "animations": [
+                {
+                    "name": "standing_down",
+                    "frames": [0, 1]
+                },
+                {
+                    "name": "standing_up",
+                    "frames": [4, 5]
+                },
+                {
+                    "name": "standing_left",
+                    "frames": [8, 9]
+                },
+                {
+                    "name": "standing_right",
+                    "frames": [12, 13]
+                },
+                {
+                    "name": "moving_down",
+                    "frames": [2, 3]
+                },
+                {
+                    "name": "moving_up",
+                    "frames": [6, 7]
+                },
+                {
+                    "name": "moving_left",
+                    "frames": [10, 11]
+                },
+                {
+                    "name": "moving_right",
+                    "frames": [14, 15]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Crafter",
+            "type": "shell",
+            "command": "go build -o crafter.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "problemMatcher": "$go"
+        },
+        {
+            "label": "Run Crafter",
+            "type": "shell",
+            "command": "${workspaceFolder}/crafter.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "Build Crafter"
+            ]
+        }
+    ]
+}
